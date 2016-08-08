@@ -40,7 +40,7 @@ namespace AspNetIdentityMockIdentitySamples.Controllers
 
                 this.AuthenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = true }, identity);
 
-                return this.RedirectToAction("index", "admin");
+                return this.RedirectToAction("admin", "home");
             }
             else if (id.Equals("mary", StringComparison.OrdinalIgnoreCase) && password.Equals("password"))
             {
