@@ -25,7 +25,6 @@ namespace AspNetIdentityMockIdentitySamples.Controllers
             }
         }
 
-        // GET: Home
         [HttpGet, AuthorizeWithRoleAuthenticated(Roles = "Admin, User"), Route("index")]
         public ActionResult Index()
         {
